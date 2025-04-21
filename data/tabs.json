@@ -15,8 +15,7 @@
         "id": "tab3",
         "image": "images/3.png",
         "title": "Вкладка 3",
-        "content": Содержимое третьей вкладки <b>gdg</b>
-<div class="base64-converter">
+        "content": "<div class="base64-converter">
     <div class="converter-section">
         <textarea id="inputText" placeholder="Введите текст здесь..." class="text-area"></textarea>
         <div class="button-group">
@@ -116,7 +115,8 @@ function clearFields() {
     document.getElementById('inputText').value = '';
     document.getElementById('outputText').value = '';
 }
-</script>
+</script>"
+
         
     }
 ]
