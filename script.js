@@ -33,8 +33,12 @@ async function initTabs() {
 function encodeBase64() {
     const input = document.getElementById('base64Input').value;
     try {
+        // Исправленное кодирование с поддержкой UTF-8
         const utf8Bytes = new TextEncoder().encode(input);
-        const binaryString = String.fromCharCode(...utf8Bytes);
+        let binaryString = '';
+        for(let i = 0; i < utf8Bytes.length; i++) {
+            binaryString += String.fromCharCode(utf8Bytes[i]);
+        }
         document.getElementById('base64Result').textContent = btoa(binaryString);
     } catch(e) {
         document.getElementById('base64Result').textContent = "Ошибка кодирования";
@@ -44,12 +48,13 @@ function encodeBase64() {
 function decodeBase64() {
     const input = document.getElementById('base64Input').value;
     try {
+        // Исправленное декодирование
         const binaryString = atob(input);
         const bytes = new Uint8Array(binaryString.length);
-        for(let i = 0; i < binaryString.length; i++){
+        for(let i = 0; i < binaryString.length; i++) {
             bytes[i] = binaryString.charCodeAt(i);
         }
-        document.getElementById('base64Result').textContent = new TextDecoder().decode(bytes);
+        document.getElementById('base64Result').textContent = new TextDecoder('utf-8').decode(bytes);
     } catch(e) {
         document.getElementById('base64Result').textContent = "Неверный Base64";
     }
