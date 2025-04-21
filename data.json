@@ -2,17 +2,17 @@
     "images": [
         {
             "id": "tab1",
-            "url": "images/tab1.jpg",
+            "url": "images/1.png",
             "content": "Content for Tab 1"
         },
         {
             "id": "tab2",
-            "url": "images/tab2.jpg",
+            "url": "images/2.png",
             "content": "Content for Tab 2"
         },
         {
             "id": "tab3",
-            "url": "images/tab3.jpg",
+            "url": "images/3.png",
             "content": "Content for Tab 3"
         }
     ]
