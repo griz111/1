@@ -16,11 +16,12 @@ async function initTabs() {
         const content = document.createElement('div');
         content.className = `tab-content ${index === 0 ? 'active' : ''}`;
 
-        <div>gfgddgdgdg</div>
-
         if(img.isEncoder) {
             content.innerHTML = `
                 <div class="base64-converter">
+                
+                <div>gfgddgdgdg</div>
+                
                     <textarea id="base64Input" 
                               rows="4" 
                               placeholder="Введите текст или Base64 строку"></textarea>
