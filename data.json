@@ -2,11 +2,11 @@
     "images": [
         {
             "url": "images/1.png",
-            "content": "Контент первой вкладки"
+            "content": "Base64"
         },
         {
             "url": "images/2.png",
-            "content": "Содержимое второй вкладки"
+            "content": "Radix-64"
         },
         {
             "url": "images/3.png",
