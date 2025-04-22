@@ -5,11 +5,11 @@
             "content": "Контент первой вкладки"
         },
         {
-            "url": "images/1.png",
+            "url": "images/2.png",
             "content": "Содержимое второй вкладки"
         },
         {
-            "url": "images/1.png",
+            "url": "images/3.png",
             "isEncoder": true
         }
     ]
