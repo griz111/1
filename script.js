@@ -6,6 +6,9 @@ async function loadData() {
 async function initTabs() {
     const data = await loadData();
     const tabsContainer = document.getElementById('tabsContainer');
+
+    <br><div>sfsdfsfs</div>
+    
     const contentContainer = document.getElementById('contentContainer');
     
     data.images.forEach((img, index) => {
