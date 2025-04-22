@@ -20,7 +20,7 @@ async function initTabs() {
             content.innerHTML = `
                 <div class="base64-converter">
                 
-                <div>gfgddgdgdg</div>
+                <div class="tab-content">gfgddgdgdg</div>
                 
                     <textarea id="base64Input" 
                               rows="4" 
